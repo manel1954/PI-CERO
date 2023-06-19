@@ -39,7 +39,7 @@ if [ $(uname -s) == "Linux" ]; then
 		DFU_UTIL="./STM32F10X_Lib/utils/linux64/dfu-util"
 		ST_FLASH="./STM32F10X_Lib/utils/linux64/st-flash"
 		STM32FLASH="./STM32F10X_Lib/utils/linux64/stm32flash"
-	elif [ $(uname -m) == "armv7l" ]; then
+	elif [ $(uname -m) == "armPI-CEROl" ]; then
 		echo "Raspberry Pi 3 detected"
 		DFU_RST="./STM32F10X_Lib/utils/rpi32/upload-reset"
 		DFU_UTIL="./STM32F10X_Lib/utils/rpi32/dfu-util"

@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=ls
-Icon=/home/pi/V7/ICONO_NEGRO.png
+Icon=/home/pi/PI-CERO/ICONO_NEGRO.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

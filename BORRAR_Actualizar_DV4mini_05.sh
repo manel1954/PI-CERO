@@ -27,11 +27,11 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        rm /home/pi/V7/DV4MINI20190307
-                        cd /home/pi/V7
+                        rm /home/pi/PI-CERO/DV4MINI20190307
+                        cd /home/pi/PI-CERO
                         git clone http://github.com/ea3eiz/DV4MINI20190307
                         rm /home/pi/dv4mini/*.*
-                        cd /home/pi/V7/DV4MINI20190307
+                        cd /home/pi/PI-CERO/DV4MINI20190307
                         cp dv_serial /home/pi/dv4mini
                         cp dv4mini.exe /home/pi/dv4mini
                         cp xref.ip /home/pi/dv4mini
@@ -60,11 +60,11 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        rm /home/pi/V7/DV4MINI20190127
-                        cd /home/pi/V7
+                        rm /home/pi/PI-CERO/DV4MINI20190127
+                        cd /home/pi/PI-CERO
                         git clone http://github.com/ea3eiz/DV4MINI20190127
                         rm /home/pi/dv4mini/*.*
-                        cd /home/pi/V7/DV4MINI20190127
+                        cd /home/pi/PI-CERO/DV4MINI20190127
                         cp dv_serial /home/pi/dv4mini
                         cp dv4mini.exe /home/pi/dv4mini
                         cp xref.ip /home/pi/dv4mini

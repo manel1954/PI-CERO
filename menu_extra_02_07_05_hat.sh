@@ -60,9 +60,9 @@ clear
                         sudo git pull
                         sleep 1
 
-                        sudo rm -R  /home/pi/AUTOARRANQUEV7
+                        sudo rm -R  /home/pi/AUTOARRANQUEPI-CERO
                         cd /home/pi/
-                        git clone http://github.com/ea3eiz/AUTOARRANQUEV7
+                        git clone http://github.com/ea3eiz/AUTOARRANQUEPI-CERO
                         sleep 1
 
                         # copia prueba.sh en /home/pi
@@ -510,7 +510,7 @@ clear
                         make 
                         echo "se instaló NextionDriver con exito"
                         sleep 3 
-                        sudo cp /home/pi/V7/nextiondriver.desktop /home/pi/.config/autostart/             
+                        sudo cp /home/pi/PI-CERO/nextiondriver.desktop /home/pi/.config/autostart/             
                         break;;
                         [nN]* ) echo ""
                         clear

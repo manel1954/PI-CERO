@@ -6,7 +6,7 @@ clear
 # path usuario
 usuario="/home/pi"
 # path usuario
-SCRIPTS_version="V7"
+SCRIPTS_version="PI-CERO"
 DIRECTORIO="YSFGateway.ini "
 
 #Colores

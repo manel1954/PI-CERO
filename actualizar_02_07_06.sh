@@ -1,5 +1,5 @@
 ﻿#!/bin/bash
-SCRIPTS_version="V7"
+SCRIPTS_version="PI-CERO"
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" /home/pi/status.ini
 sed -i "2c BlueDV=OFF" /home/pi/status.ini
@@ -211,8 +211,8 @@ sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh ejecutar_dvrptr_02_
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/DVRPTR.png" /home/pi/Desktop/Boton_3
 sed -i "11c Name[es_ES]=Abrir Dvrptr" /home/pi/Desktop/Boton_3
 
-sudo rm -R /home/pi/V7/associacioader.com
-sudo rm -R /home/pi/V7/Desktop/associacioader.com
-sudo rm /home/pi/V7/Desktop/st-data
+sudo rm -R /home/pi/PI-CERO/associacioader.com
+sudo rm -R /home/pi/PI-CERO/Desktop/associacioader.com
+sudo rm /home/pi/PI-CERO/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 
