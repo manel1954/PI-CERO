@@ -966,8 +966,8 @@ done;;
 14) echo ""
 while true
 do
-                        echo "Valor actual Reflector: $reflector"
-           	            read -p 'Introduce Refelctor (ej: XRF266 B): ' tu_indicativo                          
+                        echo "Valor actual Reflector:  $reflector"
+           	            read -p 'Introduce Reflector (ej: XRF266 B): ' tu_indicativo                          
                         actualizar=S 
                         case $actualizar in
 			            [sS]* ) echo ""
