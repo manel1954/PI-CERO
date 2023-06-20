@@ -963,24 +963,21 @@ do
         break;;
 esac
 done;;
-
-
-
 14) echo ""
 while true
 do
 
-echo "Valor actual Reflector: $reflector"
-           	          read -p 'Introduce Refelctor (ej: XRF266 B): ' tu_indicativo
+                        ref=`expr substr $reflector 10 10`
+                        echo "Valor actual Reflector: $ref"
+           	            read -p 'Introduce Refelctor (ej: XRF266 B): ' tu_indicativo
                           
-                          actualizar=S 
-                          case $actualizar in
-			        [sS]* ) echo ""
+                        actualizar=S 
+                        case $actualizar in
+			            [sS]* ) echo ""
 
-                          #Convierte indicativo si se introduce en minúsculas a Mayúsculas
-                          tu_indicativo=`echo "$tu_indicativo" | tr [:lower:] [:upper:]`
-
-			        #tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
+                        #Convierte indicativo si se introduce en minúsculas a Mayúsculas
+                        tu_indicativo=`echo "$tu_indicativo" | tr [:lower:] [:upper:]`
+			            #tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
  
 
 
