@@ -36,4 +36,5 @@ echo "***********************************************"
 echo "*             ABRIENDO SOLO D-STAR            * "
 echo "***********************************************"
 sleep 1
-sudo ./MMDVMDSTAR MMDVMDSTAR.ini & ircddbgateway -gui
+#sudo ./MMDVMDSTAR MMDVMDSTAR.ini & ircddbgateway -gui
+xterm -geometry 76x11+652+134 -bg black -fg white -fa ‘verdana’ -fs 9x -T MMDVMDSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini & ircddbgateway -gui");
