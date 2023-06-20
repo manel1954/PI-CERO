@@ -101,6 +101,12 @@ letra=c
 linea_sed_MODULE=$numero_linea$letra
 echo "$MODULE"
 
+echo -n "\33[1;36m   13)\33[0m REFLECTOR DSTAR         - \33[1;33m"
+reflector=`grep -n "reflector1" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini`
+reflector1=`expr substr $reflector 10 10`
+echo "$reflector1"
+
+
 echo ""
 echo "\33[1;36m  0)\33[1;34m Salir del script \33[1;31m OJO!! no salir con ctrl+c ni con la x"
 echo ""
