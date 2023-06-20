@@ -59,13 +59,13 @@ clear
                         sudo git pull
                         sleep 1
 
-                        sudo rm -R  /home/pi/AUTOARRANQUEV7
-                        cd /home/pi/
-                        git clone http://github.com/ea3eiz/AUTOARRANQUEV7
-                        sleep 1
-
-                        # copia prueba.sh en /home/pi
-                        cp /home/pi/$SCRIPTS_version/prueba.sh /home/pi
+                        #sudo rm -R  /home/pi/AUTOARRANQUEV7
+                        #cd /home/pi/
+                        #git clone http://github.com/ea3eiz/AUTOARRANQUEV7
+                        #sleep 1
+#
+                        ## copia prueba.sh en /home/pi
+                        #cp /home/pi/$SCRIPTS_version/prueba.sh /home/pi
 
 
                         #comprueba si el fichero existe
