@@ -182,7 +182,11 @@ sed -i "$numero_linea_letrac Callsign=$tu_indicativo" /home/pi/YSFClients/YSFGat
                         sed -i "2c Callsign=$tu_indicativo" /home/pi/MMDVMHost/MMDVMDSTAR.ini
                         #iNDICATIVO SOLOFUSION
                         sed -i "2c Callsign=$tu_indicativo" /home/pi/MMDVMHost/MMDVMFUSION.ini
-                        
+
+                        #iNDICATIVO IRCDDBGATEWAY
+                        sed -i "2c gatewayCallsign=$tu_indicativo" /usr/local/etc/opendv/ircddbgateway                        
+                        sed -i "95c ircddbUsername=$tu_indicativo" /usr/local/etc/opendv/ircddbgateway
+                        sed -i "116c dplusLogin=$tu_indicativo" /usr/local/etc/opendv/ircddbgateway
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
