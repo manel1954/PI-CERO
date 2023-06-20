@@ -102,7 +102,7 @@ linea_sed_MODULE=$numero_linea$letra
 echo "$MODULE"
 
 echo -n "\33[1;36m  14)\33[0m REFLECTOR DSTAR       - \33[1;33m"
-reflector=`grep -n "reflector1" /usr/local/etc/opendv/ircddbgateway
+reflector=`grep -n "reflector1" /usr/local/etc/opendv/ircddbgateway`
 reflector1=`expr substr $reflector 10 10`
 echo "$reflector1"
 
