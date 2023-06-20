@@ -16,14 +16,8 @@ echo "   * Script Modificar AUTOARRANQUE     \33[1;33m       \33[1;31m by EA3EIZ
 echo "   *                                                          *"
 echo "   ************************************************************"
 
-
-
-
-
-
-
 #==================================================================================
-echo -n "\33[1;36m   105)\33[1;37m  Quitar Radio del autoarranque         - "
+echo -n "\33[1;36m   100)\33[1;37m  Quitar Radio del autoarranque         - "
 MMDVMPLACA=`grep "MMDVMPLACA" /home/pi/autoarranque_07.ini`
 MMDVMPLACA=`expr substr $MMDVMPLACA 12 3`
 if [ $MMDVMPLACA = "ON" ]
@@ -36,7 +30,7 @@ bluedv=`grep "MMDVMPLACA" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   106)\33[1;37m  Quitar DMR+ del autoarranque          - "
+echo -n "\33[1;36m   101)\33[1;37m  Quitar DMR+ del autoarranque          - "
 MMDVMPLUS=`grep "MMDVMPLUS" /home/pi/autoarranque_07.ini`
 MMDVMPLUS=`expr substr $MMDVMPLUS 11 3`
 if [ $MMDVMPLUS = "ON" ]
@@ -49,7 +43,7 @@ bluedv=`grep "MMDVMPLUS" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   108)\33[1;37m  Quitar BM del autoarranque            - "
+echo -n "\33[1;36m   102)\33[1;37m  Quitar BM del autoarranque            - "
 MMDVMBM=`grep "MMDVMBM" /home/pi/autoarranque_07.ini`
 MMDVMBM=`expr substr $MMDVMBM 9 3`
 if [ $MMDVMBM = "ON" ]
@@ -62,7 +56,7 @@ bluedv=`grep "MMDVMBM" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   110)\33[1;37m  Quitar SOLO_DSTAR del autoarranque    - \33[1;32m"
+echo -n "\33[1;36m   103)\33[1;37m  Quitar SOLO_DSTAR del autoarranque    - \33[1;32m"
 solod=`grep "SOLO_DSTAR" /home/pi/autoarranque_07.ini`
 solod=`expr substr $solod 12 3`
 if [ $solod = "ON" ]
@@ -75,7 +69,7 @@ solod=`grep "SOLO_DSTAR" /home/pi/autoarranque_07.ini`
 #=================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   111)\33[1;37m  Quitar SOLO_FUSION del autoarranque   - \33[1;32m"
+echo -n "\33[1;36m   104)\33[1;37m  Quitar SOLO_FUSION del autoarranque   - \33[1;32m"
 solof=`grep "SOLO_FUSION" /home/pi/autoarranque_07.ini`
 solof=`expr substr $solof 13 3`
 if [ $solof = "ON" ]
@@ -88,7 +82,7 @@ solof=`grep "SOLO_FUSION" /home/pi/autoarranque_07.ini`
 #=================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   113)\33[1;37m  Quitar YSF2DMR del autoarranque       - \33[1;32m"
+echo -n "\33[1;36m   105)\33[1;37m  Quitar YSF2DMR del autoarranque       - \33[1;32m"
 var1=`grep "YSF2DMR" /home/pi/autoarranque_07.ini`
 var1=`expr substr $var1 9 3`
 if [ $var1 = "ON" ]
@@ -101,7 +95,7 @@ var2=`grep "YSF2DMR" /home/pi/autoarranque_07.ini`
 #=================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   116)\33[1;37m  Quitar DMR2YSF del  autoarranque      - \33[1;32m"
+echo -n "\33[1;36m   106)\33[1;37m  Quitar DMR2YSF del  autoarranque      - \33[1;32m"
 var1=`grep "DMR2YSF" /home/pi/autoarranque_07.ini`
 var1=`expr substr $var1 9 3`
 if [ $var1 = "ON" ]
@@ -114,7 +108,7 @@ var2=`grep "DMR2YSF" /home/pi/autoarranque_07.ini`
 #=================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   117)\33[1;37m  Quitar DMR2NXDN del  autoarranque     - \33[1;32m"
+echo -n "\33[1;36m   107)\33[1;37m  Quitar DMR2NXDN del  autoarranque     - \33[1;32m"
 var1=`grep "DMR2NXDN" /home/pi/autoarranque_07.ini`
 var1=`expr substr $var1 10 3`
 if [ $var1 = "ON" ]
@@ -129,7 +123,7 @@ var2=`grep "DMR2NXDN" /home/pi/autoarranque_07.ini`
 echo "\33[1;33m"
 
 #=================================================================================
-echo -n "\33[1;36m   205)\33[1;33m  Poner Radio en el autoarranque        - "
+echo -n "\33[1;36m   200)\33[1;33m  Poner Radio en el autoarranque        - "
 MMDVMPLACA=`grep "MMDVMPLACA" /home/pi/autoarranque_07.ini`
 MMDVMPLACA=`expr substr $MMDVMPLACA 12 3`
 if [ $MMDVMPLACA = "OFF" ]
@@ -142,7 +136,7 @@ bluedv=`grep "MMDVMPLACA" /home/pi/autoarranque_07.ini`
 #=================================================================================
 
 #=================================================================================
-echo -n "\33[1;36m   206)\33[1;33m  Poner DMR+ en autoarranque            - "
+echo -n "\33[1;36m   201)\33[1;33m  Poner DMR+ en autoarranque            - "
 MMDVMPLUS=`grep "MMDVMPLUS" /home/pi/autoarranque_07.ini`
 MMDVMPLUS=`expr substr $MMDVMPLUS 11 3`
 if [ $MMDVMPLUS = "OFF" ]
@@ -155,7 +149,7 @@ bluedv=`grep "MMDVMPLUS" /home/pi/autoarranque_07.ini`
 #=================================================================================
 
 #=================================================================================
-echo -n "\33[1;36m   208)\33[1;33m  Poner BM en el autoarranque           - "
+echo -n "\33[1;36m   202)\33[1;33m  Poner BM en el autoarranque           - "
 MMDVMBM=`grep "MMDVMBM" /home/pi/autoarranque_07.ini`
 MMDVMBM=`expr substr $MMDVMBM 9 3`
 if [ $MMDVMBM = "OFF" ]
@@ -168,7 +162,7 @@ bluedv=`grep "MMDVMBM" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #=================================================================================
-echo -n "\33[1;36m   210)\33[1;33m  Poner SOLO_DSTAR en el autoarranque   - "
+echo -n "\33[1;36m   203)\33[1;33m  Poner SOLO_DSTAR en el autoarranque   - "
 solod=`grep "SOLO_DSTAR" /home/pi/autoarranque_07.ini`
 solod=`expr substr $solod 12 3`
 if [ $solod = "OFF" ]
@@ -181,7 +175,7 @@ solod=`grep "SOLO_DSTAR" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   211)\33[1;33m  Poner SOLO_FUSION en el autoarranque  - "
+echo -n "\33[1;36m   204)\33[1;33m  Poner SOLO_FUSION en el autoarranque  - "
 solof=`grep "SOLO_FUSION" /home/pi/autoarranque_07.ini`
 solof=`expr substr $solof 13 3`
 if [ $solof = "OFF" ]
@@ -194,7 +188,7 @@ solof=`grep "SOLO_FUSION" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   213)\33[1;33m  Poner YSF2DMR en el autoarranque      - "
+echo -n "\33[1;36m   205)\33[1;33m  Poner YSF2DMR en el autoarranque      - "
 ysf_dmr=`grep "YSF2DMR" /home/pi/autoarranque_07.ini`
 ysf_dmr=`expr substr $ysf_dmr 9 3`
 if [ $ysf_dmr = "OFF" ]
@@ -207,7 +201,7 @@ trans=`grep "YSF2DMR" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   216)\33[1;33m  Poner DMR2YSF en el autoarranque      - "
+echo -n "\33[1;36m   206)\33[1;33m  Poner DMR2YSF en el autoarranque      - "
 var1=`grep "DMR2YSF" /home/pi/autoarranque_07.ini`
 var1=`expr substr $var1 9 3`
 if [ $var1 = "OFF" ]
@@ -220,7 +214,7 @@ trans=`grep "DMR2YSF" /home/pi/autoarranque_07.ini`
 #==================================================================================
 
 #==================================================================================
-echo -n "\33[1;36m   217)\33[1;33m  Poner DMR2NXDN en el autoarranque     - "
+echo -n "\33[1;36m   207)\33[1;33m  Poner DMR2NXDN en el autoarranque     - "
 var1=`grep "DMR2NXDN" /home/pi/autoarranque_07.ini`
 var1=`expr substr $var1 10 3`
 if [ $var1 = "OFF" ]
@@ -245,77 +239,12 @@ read escoger_menu
 echo ""
 
 case $escoger_menu in
-101) echo ""
-while true
-do
-clear
-	                     actualizar=S
-		                   case $actualizar in
-			                 [sS]* ) echo ""
-			                 echo "Quitando D-STAR del autoarranque >>>>>"
-			                 sleep 2
-			                 cd /home/pi/.config/autostart
-                       mv IRCDDB.desktop /home/pi/AUTOARRANQUEPI-CERO
-			                 sed -i "1c D-STAR=OFF" /home/pi/autoarranque_07.ini
-			                 break;;
-			                 [nN]* ) echo ""
-			                 break;;
-esac
-done;;
 
-102) echo ""
-while true
-do
-clear
-	                     actualizar=S
-		                   case $actualizar in
-			                 [sS]* ) echo ""
-			                 echo "Quitando BlueDV del autoarranque >>>>>"
-                       sleep 2
-                       cd /home/pi/.config/autostart
-                       mv BLUEDV.desktop /home/pi/AUTOARRANQUEPI-CERO
-			                 sed -i "2c BlueDV=OFF" /home/pi/autoarranque_07.ini
-			                 break;;
-			                 [nN]* ) echo ""
-			                 break;;
-esac
-done;;
-103) echo ""
-while true
-do
-clear
 
-                       actualizar=S
-		                   case $actualizar in
-			                 [sS]* ) echo ""
-			                 echo "Quitando YSF del autoarranque >>>>>"
-                       sleep 2
-                       cd /home/pi/.config/autostart
-                       mv YSF.desktop /home/pi/AUTOARRANQUEPI-CERO
-                       sed -i "3c C4F=OFF" /home/pi/autoarranque_07.ini
-                       break;;
-                       [nN]* ) echo ""
-                       break;;
-esac
-done;;
-104) echo ""
-while true
-do
-clear            
-                        actualizar=S
-		                    case $actualizar in
-			                  [sS]* ) echo ""
-			                  echo "Quitando DV4mini del autoarranque >>>>>"
-                        sleep 2
-                        cd /home/pi/.config/autostart
-                        mv DV4MINI.desktop /home/pi/AUTOARRANQUEPI-CERO
-                        sed -i "4c DV4mini=OFF" /home/pi/autoarranque_07.ini
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
-esac
-done;;
-105) echo ""
+
+
+
+100) echo ""
 while true
 do
 clear              
@@ -332,7 +261,7 @@ clear
                         break;;
 esac
 done;;
-106) echo ""
+101) echo ""
 while true
 do
 clear              
@@ -352,24 +281,8 @@ clear
 
 esac
 done;;
-107) echo ""
-while true
-do
-clear              
-                        actualizar=S
-                        case $actualizar in
-                        [sS]* ) echo ""
-                        echo "Quitando LIBRE del autoarranque >>>>>"
-                        sleep 2
-                        cd /home/pi/.config/autostart
-                        mv LIBRE.desktop /home/pi/AUTOARRANQUEPI-CERO
-                        sed -i "10c MMDVMLIBRE=OFF" /home/pi/autoarranque_07.ini
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
-esac
-done;;
-108) echo ""
+
+102) echo ""
 while true
 do
 clear              
@@ -386,24 +299,8 @@ clear
                         break;;
 esac
 done;;
-109) echo ""
-while true
-do
-clear	        
-		  actualizar=S
-		  case $actualizar in
-			[sS]* ) echo ""
-			echo "Quitando SVXLINK del autoarranque >>>>>"
-      sleep 2
-      cd /home/pi/.config/autostart
-      mv SVXLINK.desktop /home/pi/AUTOARRANQUEPI-CERO
-			sed -i "8c SVXLINK=OFF" /home/pi/autoarranque_07.ini
-			break;;
-			[nN]* ) echo ""
-			break;;
-esac
-done;;
-110) echo ""
+
+103) echo ""
 while true
 do
 clear
@@ -420,7 +317,7 @@ clear
             break;;
 esac
 done;;
-111) echo ""
+104) echo ""
 while true
 do
 clear
@@ -437,24 +334,8 @@ clear
             break;;
 esac
 done;;
-112) echo ""
-while true
-do
-clear
-                                            actualizar=S
-                                            case $actualizar in
-                                            [sS]* ) echo ""                   
-                                            echo "Quitando DVRPTR en el autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/.config/autostart
-                                            mv DVRPTR.desktop /home/pi/AUTOARRANQUEPI-CERO
-                                            sed -i "13c DVRPTR=OFF" /home/pi/autoarranque_07.ini
-                                            break;;
-                                            [nN]* ) echo ""
-                                            break;;
-esac
-done;;
-113) echo ""
+
+105) echo ""
 while true
 do
 clear
@@ -465,47 +346,15 @@ clear
                                             sleep 2
                                             cd /home/pi/.config/autostart
                                             mv YSF2DMR.desktop /home/pi/AUTOARRANQUEPI-CERO
-                                            sed -i "15c F2DMR=OFF" /home/pi/autoarranque_07.ini
+                                            sed -i "15c YSF2DMR=OFF" /home/pi/autoarranque_07.ini
                                             break;;
                                             [nN]* ) echo ""
                                             break;;
 esac
 done;;
-114) echo ""
-while true
-do
-clear
-                                            actualizar=S
-                                            case $actualizar in
-                                            [sS]* ) echo ""                   
-                                            echo "Quitando D-STAR REPEATER del autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/.config/autostart
-                                            mv dstarrepeater.desktop /home/pi/AUTOARRANQUEPI-CERO
-                                            sed -i "9c dstarrepeater=OFF" /home/pi/autoarranque_07.ini
-                                            break;;
-                                            [nN]* ) echo ""
-                                            break;;
-esac
-done;;
-115) echo ""
-while true
-do
-clear
-                                            actualizar=S
-                                            case $actualizar in
-                                            [sS]* ) echo ""                   
-                                            echo "Quitando AMBE SERVER del autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/.config/autostart
-                                            mv AMBE_SERVER.desktop /home/pi/AUTOARRANQUEPI-CERO
-                                            sed -i "14c AMBE_SERVER=OFF" /home/pi/autoarranque_07.ini
-                                            break;; 
-                                            [nN]* ) echo ""
-                                            break;;
-esac
-done;;
-116) echo ""
+
+
+106) echo ""
 while true
 do
 clear
@@ -522,7 +371,7 @@ clear
                                             break;;
 esac
 done;;
-117) echo ""
+107) echo ""
 while true
 do
 clear
@@ -533,99 +382,17 @@ clear
                                             sleep 2
                                             cd /home/pi/.config/autostart
                                             mv DMR2NXDN.desktop /home/pi/AUTOARRANQUEPI-CERO
-                                            sed -i "17c NXDN=OFF" /home/pi/autoarranque_07.ini
+                                            sed -i "17c DMR2NXDN=OFF" /home/pi/autoarranque_07.ini
                                             break;; 
                                             [nN]* ) echo ""
                                             break;;
 esac
 done;;
-201) echo ""
-while true
-do
-clear	        
-		              actualizar=S
-		              case $actualizar in
-			            [sS]* ) echo ""
-			            echo "Poniendo DSTAR en el autoarranque >>>>>"
-                  sleep 2
-                  cd /home/pi/AUTOARRANQUEPI-CERO
-                  mv IRCDDB.desktop /home/pi/.config/autostart
-			            sed -i "1c D-STAR=ON" /home/pi/autoarranque_07.ini
-                  clear
-                  echo "\33[1;32m**********************************************************"
-                  echo "*                                                        *"
-                  echo "*  \33[1;31mDebes de tener BM ó DMR+ en el autoarranque \33[1;32m*"
-                  echo "*               \33[1;31m para que funcione D-STAR                \33[1;32m*"
-                  echo "*                                                        *"
-                  echo "**********************************************************"
-                  echo ""
-                  echo ""
-			            break;;
-			            [nN]* ) echo ""
-			            break;;
-esac
-done;;
-202) echo ""
-while true
-do
-clear
-	                                          actualizar=S
-		                                        case $actualizar in
-			                                      [sS]* ) echo ""                          
-                                            echo "Poniendo BlueDV en el autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/AUTOARRANQUEPI-CERO
-                                            mv BLUEDV.desktop /home/pi/.config/autostart
-                                            sed -i "2c BlueDV=ON" /home/pi/autoarranque_07.ini
-			                                      break;;
-			                                      [nN]* ) echo ""
-			                                      break;;
-esac
-done;;
-203) echo ""
-while true
-do
-clear              
-                        actualizar=S
-		                    case $actualizar in
-			                  [sS]* ) echo ""
-			                  echo "Poniendo YSF en el autoarranque >>>>>"
-                        sleep 2
-                        cd /home/pi/AUTOARRANQUEPI-CERO
-                        mv YSF.desktop /home/pi/.config/autostart
-                        sed -i "3c C4F=ON" /home/pi/autoarranque_07.ini
-                        clear
-                        echo "\33[1;32m**********************************************************"
-                        echo "*                                                        *"
-                        echo "*  \33[1;31mDebes de tener BM ó DMR+ en el autoarranque \33[1;32m*"
-                        echo "*               \33[1;31m para que funcione YSF                   \33[1;32m*"
-                        echo "*                                                        *"
-                        echo "**********************************************************"
-                        echo ""
-                        echo ""                            
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
-esac
-done;;
-204) echo ""
-while true
-do
-clear               
-                        actualizar=S
-		                    case $actualizar in
-			                  [sS]* ) echo ""
-			                  echo "Poniendo DV4mini en el autoarranque >>>>>"
-                        sleep 2
-                        cd /home/pi/AUTOARRANQUEPI-CERO
-                        mv DV4MINI.desktop /home/pi/.config/autostart
-                        sed -i "4c DV4mini=ON" /home/pi/autoarranque_07.ini
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
-esac
-done;;
-205) echo ""
+
+
+
+
+200) echo ""
 while true
 do
 clear           
@@ -643,7 +410,7 @@ clear
                         break;;
 esac
 done;;
-206) echo ""
+201) echo ""
 while true
 do
 clear              
@@ -660,24 +427,8 @@ clear
                         break;;
 esac
 done;;
-207) echo ""
-while true
-do
-clear              
-                        actualizar=S
-                        case $actualizar in
-                        [sS]* ) echo ""
-                        echo "Poniendo LIBRE en el autoarranque >>>>>"
-                        sleep 2
-                        cd /home/pi/AUTOARRANQUEPI-CERO
-                        mv LIBRE.desktop /home/pi/.config/autostart
-                        sed -i "10c MMDVMLIBRE=ON" /home/pi/autoarranque_07.ini
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
-esac
-done;;
-208) echo ""
+
+202) echo ""
 while true
 do
 clear
@@ -694,24 +445,7 @@ clear
                         break;;
 esac
 done;;
-209) echo ""
-while true
-do
-clear
-		              actualizar=S
-		              case $actualizar in
-			            [sS]* ) echo ""
-			            echo "Poniendo SVXLINK en el autoarranque >>>>>"
-                  sleep 2
-                  cd /home/pi/AUTOARRANQUEPI-CERO
-                  mv SVXLINK.desktop /home/pi/.config/autostart
-			            sed -i "8c SVXLINK=ON" /home/pi/autoarranque_07.ini
-			            break;;
-			            [nN]* ) echo ""
-			            break;;
-esac
-done;;
-210) echo ""
+203) echo ""
 while true
 do
 clear
@@ -728,7 +462,7 @@ clear
             break;;
 esac
 done;;
-211) echo ""
+204) echo ""
 while true
 do
 clear
@@ -745,24 +479,8 @@ clear
             break;;
 esac
 done;;
-212) echo ""
-while true
-do
-clear
-                                            actualizar=S
-                                            case $actualizar in
-                                            [sS]* ) echo ""
-                                            echo "Poniendo DVRPTR en el autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/AUTOARRANQUEPI-CERO
-                                            mv DVRPTR.desktop /home/pi/.config/autostart
-                                            sed -i "13c DVRPTR=ON" /home/pi/autoarranque_07.ini
-                                            break;;
-                                            [nN]* ) echo ""
-                                            break;;
-esac
-done;;
-213) echo ""
+
+205) echo ""
 while true
 do
 clear
@@ -773,47 +491,15 @@ clear
                                             sleep 2
                                             cd /home/pi/AUTOARRANQUEPI-CERO
                                             mv YSF2DMR.desktop /home/pi/.config/autostart
-                                            sed -i "15c F2DMR=ON" /home/pi/autoarranque_07.ini
+                                            sed -i "15c YSF2DMR=ON" /home/pi/autoarranque_07.ini
                                             break;;
                                             [nN]* ) echo ""
                                             break;;
 esac
 done;;
-214) echo ""
-while true
-do
-clear
-                                            actualizar=S
-                                            case $actualizar in
-                                            [sS]* ) echo ""
-                                            echo "Poniendo D-STAR REPEATER en el autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/AUTOARRANQUEPI-CERO
-                                            mv dstarrepeater.desktop /home/pi/.config/autostart
-                                            sed -i "9c dstarrepeater=ON" /home/pi/autoarranque_07.ini
-                                            break;;
-                                            [nN]* ) echo ""
-                                            break;;
-esac
-done;;
-215) echo ""
-while true
-do
-clear
-                                            actualizar=S
-                                            case $actualizar in
-                                            [sS]* ) echo ""
-                                            echo "Poniendo AMBE SERVER en el autoarranque >>>>>"
-                                            sleep 2
-                                            cd /home/pi/AUTOARRANQUEPI-CERO
-                                            mv AMBE_SERVER.desktop /home/pi/.config/autostart
-                                            sed -i "14c AMBE_SERVER=ON" /home/pi/autoarranque_07.ini
-                                            break;;
-                                            [nN]* ) echo ""
-                                            break;;
-esac
-done;;
-216) echo ""
+
+
+206) echo ""
 while true
 do
 clear
@@ -830,7 +516,7 @@ clear
                                             break;;
 esac
 done;;
-217) echo ""
+207) echo ""
 while true
 do
 clear
@@ -841,7 +527,7 @@ clear
                                             sleep 2
                                             cd /home/pi/AUTOARRANQUEPI-CERO
                                             mv DMR2NXDN.desktop /home/pi/.config/autostart
-                                            sed -i "17c NXDN=ON" /home/pi/autoarranque_07.ini
+                                            sed -i "17c DMR2NXDN=ON" /home/pi/autoarranque_07.ini
                                             break;;
                                             [nN]* ) echo ""
                                             break;;
