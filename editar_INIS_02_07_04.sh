@@ -966,28 +966,19 @@ done;;
 14) echo ""
 while true
 do
-
-                        ref=`expr substr $reflector 10 10`
-                        echo "Valor actual Reflector: $ref"
-           	            read -p 'Introduce Refelctor (ej: XRF266 B): ' tu_indicativo
-                          
+                        echo "Valor actual Reflector: $reflector"
+           	            read -p 'Introduce Refelctor (ej: XRF266 B): ' tu_indicativo                          
                         actualizar=S 
                         case $actualizar in
 			            [sS]* ) echo ""
-
+                        
                         #Convierte indicativo si se introduce en minúsculas a Mayúsculas
                         tu_indicativo=`echo "$tu_indicativo" | tr [:lower:] [:upper:]`
-			            #tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
- 
-
-
-                        
-
-
-
-                        #iNDICATIVO IRCDDBGATEWAY
+			            
+                        #tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
+        
+                        #REFLECTOR IRCDDBGATEWAY
                         sed -i "18c reflector1=$tu_indicativo" /usr/local/etc/opendv/ircddbgateway                        
-
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
