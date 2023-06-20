@@ -980,7 +980,7 @@ echo "Valor actual Reflector: $reflector"
                           #Convierte indicativo si se introduce en minúsculas a Mayúsculas
                           tu_indicativo=`echo "$tu_indicativo" | tr [:lower:] [:upper:]`
 
-			        tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
+			        #tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
  
 
 
